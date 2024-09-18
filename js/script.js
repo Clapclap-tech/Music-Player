@@ -8,6 +8,10 @@ progressArea = wrapper.querySelector(".progress-area"),
 progressBar = progressArea.querySelector(".progress-bar"),
 musicList = wrapper.querySelector(".music-list");
 
+function signIn() {
+  document.getElementById("wrapper-login").style.zIndex = "-1";
+}
+
 let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 isMusicPaused = true;
 
